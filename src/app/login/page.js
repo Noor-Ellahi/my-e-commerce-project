@@ -4,7 +4,6 @@
 
 import { Alert } from "bootstrap";
 import React, { useState, useEffect } from "react";
-import Router from "next/navigation";
 import {
   MDBBtn,
   MDBContainer,
@@ -18,7 +17,7 @@ import {
   MDBCheckbox
 }
   from 'mdb-react-ui-kit';
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
 
@@ -70,7 +69,6 @@ const Login = () => {
     else {
       console.log("User Found :", user)
       localStorage.setItem("authenticatedUser", JSON.stringify(user))
-      window.location.reload()
       router.push("/")
       alert("You have logged in succesfully")
       clearForm()
