@@ -4,6 +4,7 @@
 
 import { Alert } from "bootstrap";
 import React, { useState, useEffect } from "react";
+import Router from "next/navigation";
 import {
   MDBBtn,
   MDBContainer,
@@ -17,6 +18,7 @@ import {
   MDBCheckbox
 }
   from 'mdb-react-ui-kit';
+import { useRouter } from "next/router";
 
 const Login = () => {
 
@@ -28,6 +30,7 @@ const Login = () => {
   })
   const [users, setUsers] = useState([])
 
+  let router = useRouter()
 
   // clear Formstate
   const clearForm = () => {
@@ -68,7 +71,7 @@ const Login = () => {
       console.log("User Found :", user)
       localStorage.setItem("authenticatedUser", JSON.stringify(user))
       window.location.reload()
-      location = "/"
+      router.push("/")
       alert("You have logged in succesfully")
       clearForm()
     }
