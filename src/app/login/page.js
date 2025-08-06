@@ -2,7 +2,6 @@
 
 "use client"
 
-import { Alert } from "bootstrap";
 import React, { useState, useEffect } from "react";
 import {
   MDBBtn,
