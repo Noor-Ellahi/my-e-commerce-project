@@ -67,7 +67,12 @@ const Login = () => {
     }
     else {
       console.log("User Found :", user)
-      localStorage.setItem("authenticatedUser", JSON.stringify(user))
+
+      // Added to to solve issue while deploying 
+      if (typeof window !== "undefined") {
+        localStorage.setItem("authenticatedUser", JSON.stringify(user));
+      }
+      // localStorage.setItem("authenticatedUser", JSON.stringify(user))
       router.push("/")
       alert("You have logged in succesfully")
       clearForm()
@@ -158,10 +163,10 @@ const Login = () => {
 
 
 
-                <MDBBtn 
-                className='mb-4' 
-                size='lg'
-                onClick={logInUser}
+                <MDBBtn
+                  className='mb-4'
+                  size='lg'
+                  onClick={logInUser}
                 >Login</MDBBtn>
 
               </MDBCol>
