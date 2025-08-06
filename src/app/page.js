@@ -179,7 +179,7 @@ const Product = () => {
       <div className="Front-page">
         <div>
           <h1>Bazaar</h1>
-          <p>Bazaar is Pakistan's leading e-commerce and financial services platform.
+          <p>Bazaar is Pakistans leading e-commerce and financial services platform.
             Our mobile app provides homes and businesses everyday low pricing on all essentials.</p>
           <button >
             <a href = "#category">
