@@ -83,14 +83,20 @@ const Login = () => {
   }
 
 
+  // useEffect(() => {
+  //   let fetchUser = localStorage.getItem("UsersList")
+  //   let JsonData = JSON.parse(fetchUser)
+  //   setUsers(JsonData)
+  // }, [])
+
+
   useEffect(() => {
-    let fetchUser = localStorage.getItem("UsersList")
-    let JsonData = JSON.parse(fetchUser)
-    setUsers(JsonData)
-  }, [])
-
-
-
+  if (typeof window !== "undefined") {
+    let fetchUser = localStorage.getItem("UsersList");
+    let JsonData = JSON.parse(fetchUser);
+    setUsers(JsonData);
+  }
+}, []);
 
 
 
