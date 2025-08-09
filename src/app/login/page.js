@@ -71,6 +71,9 @@ const Login = () => {
       localStorage.setItem("authenticatedUser", JSON.stringify(user))
       router.push("/")
 
+      if(typeof window !== "undefined"){
+        window.location.reload()
+      }
 
       // setTimeout(() => {
       //   window.location.reload();
