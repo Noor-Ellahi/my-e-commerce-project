@@ -68,12 +68,14 @@ const Login = () => {
     else {
       console.log("User Found :", user)
 
-      // Added to to solve issue while deploying 
-      if (typeof window !== "undefined") {
-        localStorage.setItem("authenticatedUser", JSON.stringify(user));
-      }
-      // localStorage.setItem("authenticatedUser", JSON.stringify(user))
+      localStorage.setItem("authenticatedUser", JSON.stringify(user))
       router.push("/")
+
+
+      setTimeout(() => {
+        window.location.reload();
+
+      }, 1000);
       alert("You have logged in succesfully")
       clearForm()
     }
@@ -83,20 +85,16 @@ const Login = () => {
   }
 
 
-  // useEffect(() => {
-  //   let fetchUser = localStorage.getItem("UsersList")
-  //   let JsonData = JSON.parse(fetchUser)
-  //   setUsers(JsonData)
-  // }, [])
-
-
   useEffect(() => {
-  if (typeof window !== "undefined") {
-    let fetchUser = localStorage.getItem("UsersList");
-    let JsonData = JSON.parse(fetchUser);
-    setUsers(JsonData);
-  }
-}, []);
+
+    let fetchUser = localStorage.getItem("UsersList")
+    let JsonData = JSON.parse(fetchUser)
+    setUsers(JsonData)
+
+  }, [])
+
+
+
 
 
 
