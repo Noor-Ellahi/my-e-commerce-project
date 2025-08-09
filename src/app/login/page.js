@@ -72,10 +72,10 @@ const Login = () => {
       router.push("/")
 
 
-      setTimeout(() => {
-        window.location.reload();
+      // setTimeout(() => {
+      //   window.location.reload();
 
-      }, 1000);
+      // }, 1000);
       alert("You have logged in succesfully")
       clearForm()
     }
