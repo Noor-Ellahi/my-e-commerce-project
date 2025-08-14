@@ -39,6 +39,18 @@ const Login = () => {
   }
 
 
+  // Relaoding and getting data for LS in my deployed Next js project 
+  function handleReload() {
+    if (typeof window !== "undefined") {
+
+      
+      window.location.reload();
+    }
+
+  }
+
+
+
   const logInUser = () => {
 
     // console.log("Users :" , users)
@@ -68,17 +80,22 @@ const Login = () => {
     else {
       console.log("User Found :", user)
 
+        
+   
       localStorage.setItem("authenticatedUser", JSON.stringify(user))
-      router.push("/")
+      // router.push("/")
 
-      if(typeof window !== "undefined"){
-        window.location.reload()
-      }
+      handleReload()
 
-      // setTimeout(() => {
-      //   window.location.reload();
+      window.location = "/"
+      
 
-      // }, 1000);
+      // if(typeof window !== "undefined"){
+      //   window.location.reload()
+      // }
+
+
+      
       alert("You have logged in succesfully")
       clearForm()
     }
@@ -140,7 +157,7 @@ const Login = () => {
             <MDBRow>
               <MDBCol md='10' lg='6' className='order-2 order-lg-1 d-flex flex-column align-items-center'>
 
-                <p classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
+                <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
 
 
 

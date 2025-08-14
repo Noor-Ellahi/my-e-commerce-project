@@ -17,6 +17,7 @@ import {
 } from 'mdb-react-ui-kit';
 
 import "@/styles/app-modules.css"
+
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -24,6 +25,8 @@ const Navbar = () => {
   const [openNavSecond, setOpenNavSecond] = useState(false);
   const [authUser, setAuthUser] = useState(null)
 
+
+  // Logout btn:
   const logOutUser = () => {
     localStorage.setItem("authenticatedUser", JSON.stringify(null))
 
