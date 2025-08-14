@@ -16,7 +16,7 @@ import {
   MDBCollapse
 } from 'mdb-react-ui-kit';
 
-import "@/styles/app-modules.css"
+import "@/components/navigation/navbar-modules.css"
 
 import Link from 'next/link';
 

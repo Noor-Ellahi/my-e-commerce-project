@@ -1,0 +1,43 @@
+/* NavBar */
+
+.Nav-Main{
+    width: 100%;
+    padding: 15 40;
+    background-color: #ffffff;
+    border-bottom: 1px solid #696565;
+    color: #696565;
+}
+
+.Nav-Cont{
+    background-color:transparent;
+    padding: 0;
+    margin: 0;
+    
+}
+.Nav-Main .Nav-Cont .headText{
+    font-size: 35px;
+    padding-right: 30px;
+
+}
+.Nav-Main .Nav-Cont .headLi {
+    text-decoration: none;
+    font-size: 18px ;
+    color: #17171c;
+    padding-right: 25px;
+}
+
+.logOutBtn{
+    border: 0;
+    color: #17171c;
+    font-weight: 400;
+    background-color: transparent;
+    font-size: 18px;
+    box-shadow: #b4b4f8 0 0 10 ;
+    padding: 5 10;
+}
+
+@media screen and (max-width : 1000px) {
+  .authName{
+    display: none !important;
+  }
+}

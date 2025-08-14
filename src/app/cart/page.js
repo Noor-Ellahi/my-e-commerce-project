@@ -12,7 +12,7 @@ import {
 } from 'mdb-react-ui-kit';
 import { useRouter } from "next/navigation";
 
-import "@/styles/app-modules.css"
+import "@/app/cart/cart-modules.css"
 
 const Cart = () => {
 

@@ -1,0 +1,37 @@
+/* Footer */
+
+.footerMain{
+  background-color: #1f8836 !important;
+}
+
+
+.footerInner{
+  background-color: #97EDD0 !important;
+  
+}
+
+.footerSection{
+  height: 10vh !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerBtn{
+  border-radius: 50px;  
+  display: flex;
+}
+
+.footerText{
+  color: #17171C;
+  font-size: large !important;
+  font-weight: 500;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerText a{
+  color: #17171c !important;
+}

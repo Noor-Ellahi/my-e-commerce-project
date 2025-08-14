@@ -10,7 +10,7 @@ import {
     MDBBtn
 } from 'mdb-react-ui-kit';
 
-import "@/styles/app-modules.css"
+import "@/components/footer/footer-modules.css"
 
 const Footer = () => {
 
