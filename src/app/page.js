@@ -183,7 +183,7 @@ const Product = () => {
           <h1>Bazaar</h1>
           <p>Bazaar is Pakistans leading e-commerce and financial services platform.
             Our mobile app provides homes and businesses everyday low pricing on all essentials.</p>
-          <button >
+          <button className="check">
             start looting
             
           </button>
