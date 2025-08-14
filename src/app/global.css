@@ -51,10 +51,10 @@
     width: 70vh;
 }
 
-.Front-page .check{
+.check{
     border: 1px solid black;
     box-shadow: 0px 0 7;
-    padding: 10 20;
+    padding: 10 40;
     border-radius: 5px;
     background-color: transparent;
     margin-top: 20px;
