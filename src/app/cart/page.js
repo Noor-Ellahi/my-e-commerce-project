@@ -26,7 +26,7 @@ const Cart = () => {
     const [users, setUsers] = useState([])
     const [otherDetails, setOtherDetails] = useState({
         address : "",
-        number : null , 
+        number : "" , 
     })
 
     // clear states

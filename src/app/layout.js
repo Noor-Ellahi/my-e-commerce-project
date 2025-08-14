@@ -30,7 +30,7 @@ import "@/app/global.css"
 
 const  RootLayout =({ children }) => {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <Navbar />
         {children}

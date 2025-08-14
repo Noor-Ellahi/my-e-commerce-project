@@ -69,6 +69,7 @@ const Navbar = () => {
                 Home
               </Link>
             </MDBNavbarLink>
+            
 
             {
               (authUser && authUser?.email == "admin@gmail.com")
@@ -96,7 +97,7 @@ const Navbar = () => {
             </MDBNavbarLink>
 
             <MDBNavbarLink
-              
+
             >
               <Link
                 className='headLi'
