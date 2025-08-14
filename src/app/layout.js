@@ -25,7 +25,7 @@ import Footer from '@/components/footer/footer';
 
 //  Import Styles
 
-import "@/styles/app-modules.css"
+import "@/app/global.css"
 
 
 const  RootLayout =({ children }) => {

@@ -14,7 +14,7 @@ import {
 
 
 
-import "@/styles/app-modules.css"
+import "@/app/global.css"
 
 
 const Product = () => {
